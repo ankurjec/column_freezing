@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Column Freezing</title>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday@1.8.2/css/pikaday.css">
+  <link rel="stylesheet" media="screen" href="http://www.globalodds.org/file/handsontable/dist/handsontable.css">
+
+  <!-- <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+  <link rel="stylesheet" media="screen" href="http://www.globalodds.org/file/handsontable/dist/handsontable.css">
+  <link rel="stylesheet" media="screen" href="http://www.globalodds.org/file/handsontable/dist/pikaday/pikaday.css">
+  <script src="http://www.globalodds.org/file/handsontable/dist/pikaday/pikaday.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/dist/moment/moment.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/dist/zeroclipboard/ZeroClipboard.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/dist/numbro/numbro.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/dist/numbro/languages.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/dist/handsontable.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/demo/js/samples.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/demo/js/samples.js"></script>
+  <script src="http://www.globalodds.org/file/handsontable/demo/js/samples.js"></script> -->
+
+</head>
+
+<body>
+	<h2>Column Freezing:</h2>
+	<div id="example1" class="hot handsontable htColumnHeaders"></div>
+</body>
+<script>
+	const container = document.querySelector('#example1');
+
+const hot = new Handsontable(container, {
+  data: Handsontable.helper.createSpreadsheetData(100, 50),
+  colWidths: 100,
+  width: '100%',
+  height: 720,
+  rowHeaders: true,
+  colHeaders: true,
+  fixedColumnsLeft: 2,
+  licenseKey: 'non-commercial-and-evaluation'
+});
+</script>
+
+</html>
